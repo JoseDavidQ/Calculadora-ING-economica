@@ -2,6 +2,8 @@
 
 Aplicación de una sola página (Vite + JavaScript, sin login, sin servidor). Todo se calcula en el navegador.
 
+Sitio publicado: https://calculadora-economica.vercel.app
+
 ## Pestañas
 
 1. **Interés simple** — monto, interés, capital, tasa o tiempo.
@@ -23,11 +25,15 @@ npm run build    # genera la carpeta dist
 
 ## Publicar en Vercel
 
+El proyecto está conectado a este repositorio de GitHub: cada vez que se sube un cambio a la rama `main`, Vercel lo publica solo.
+
 ```powershell
-npx vercel --prod
+git add -A
+git commit -m "Describa el cambio"
+git push
 ```
 
-La primera vez pide iniciar sesión (`npx vercel login`). Después, cada cambio se publica con el mismo comando.
+Si alguna vez necesita publicar sin pasar por GitHub, también sirve `npx vercel --prod`.
 
 ## Estructura
 
