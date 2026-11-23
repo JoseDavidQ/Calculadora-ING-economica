@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Calculadora de ingeniería económica: interés simple, interés compuesto, tasas de conversión, anualidades y tabla de amortización, con explicación paso a paso." />
+    <meta name="theme-color" content="#0B2545" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+    <title>Calculadora de ingeniería económica</title>
+  </head>
+  <body>
+    <a class="skip" href="#panel">Saltar a las casillas</a>
+
+    <header class="top">
+      <div class="shell">
+        <div class="top-row">
+          <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
+            <rect width="48" height="48" rx="9" fill="#0B2545" />
+            <rect x="9" y="7" width="30" height="10" rx="2.4" fill="#fff" />
+            <rect x="26" y="10.3" width="9" height="3.4" rx="1.7" fill="#0B2545" />
+            <g fill="#fff">
+              <rect x="9" y="21.5" width="8.4" height="5.2" rx="1.8" />
+              <rect x="19.8" y="21.5" width="8.4" height="5.2" rx="1.8" />
+              <rect x="30.6" y="21.5" width="8.4" height="5.2" rx="1.8" />
+              <rect x="9" y="29.5" width="8.4" height="5.2" rx="1.8" />
+              <rect x="19.8" y="29.5" width="8.4" height="5.2" rx="1.8" />
+              <rect x="9" y="37.5" width="8.4" height="5.2" rx="1.8" />
+              <rect x="19.8" y="37.5" width="8.4" height="5.2" rx="1.8" />
+            </g>
+            <rect x="30.6" y="29.5" width="8.4" height="13.2" rx="1.8" fill="#C8102E" />
+          </svg>
+          <h1>Calculadora de ingeniería económica</h1>
+        </div>
+        <nav class="no-print" aria-label="Temas de ingeniería económica">
+          <div id="tabs" class="tabs" role="tablist" aria-label="Temas"></div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="shell layout">
+      <section id="results" class="results" aria-live="polite" aria-label="Resultados y explicación"></section>
+      <aside id="panel" class="panel no-print" aria-label="Datos para el cálculo" tabindex="-1"></aside>
+    </main>
+
+    <footer class="foot no-print">
+      <div class="shell">
+        <p>Herramienta educativa de ingeniería económica. Use los resultados como apoyo de estudio y verifíquelos con su docente.</p>
+        <p>Se usa el año comercial (360 días). No guarda ni envía sus datos: todo se calcula en su propio equipo.</p>
+      </div>
+    </footer>
+
+    <noscript><p style="padding:2rem">Esta calculadora necesita JavaScript para funcionar. Por favor actívelo en su navegador.</p></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
